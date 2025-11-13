@@ -35,11 +35,18 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <div className="group cursor-pointer inline-block">
-  <p className="relative text-[30px] sm:text-[48px] font-extrabold bg-gradient-to-r from-sky-600 to-emerald-500 text-transparent bg-clip-text drop-shadow-md transition-all duration-300 ease-in-out group-hover:scale-110">
-    <span className="tracking-wider font-serif">A</span>
-  </p>
-</div>
+          <div className="group relative inline-flex items-center">
+            <span className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-500 via-emerald-500 to-slate-700 opacity-20 blur-lg transition-opacity duration-300 group-hover:opacity-45" />
+
+            <p className="relative px-3 py-1 text-[20px] sm:text-[30px] md:text-[34px] font-semibold uppercase tracking-[0.22em] text-slate-900 transition-all duration-300 ease-out group-hover:scale-105 group-hover:tracking-[0.3em]">
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-slate-900 via-slate-800 to-emerald-700 drop-shadow-[0_6px_12px_rgba(15,23,42,0.25)]">
+                Andualem
+              </span>
+              <span className="ml-2 align-super text-[16px] sm:text-[18px] md:text-[20px] text-emerald-500 drop-shadow-[0_0_6px_rgba(16,185,129,0.8)] animate-pulse">
+                *
+              </span>
+            </p>
+          </div>
 
         </Link>
 

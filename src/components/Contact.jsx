@@ -1,6 +1,7 @@
 import { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
+import { toast } from 'react-hot-toast';
 import { SectionWrapper } from '../hoc';
 import { FaLinkedinIn, FaPhone, FaStar } from 'react-icons/fa';
 import { slideIn } from '../utils/motion';
@@ -23,6 +24,10 @@ const Contact = () => {
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     return emailRegex.test(email);
   };
+
+  const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+  const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+  const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -56,10 +61,17 @@ const Contact = () => {
       return;
     }
 
+    if (!serviceId || !templateId || !publicKey) {
+      setLoading(false);
+      console.warn('EmailJS environment variables are missing.');
+      toast.error('Email service temporarily unavailable. Please try again later.');
+      return;
+    }
+
     emailjs
       .send(
-        'service_re9ll8a',
-        'template_ohxzwqd',
+        serviceId,
+        templateId,
         {
           from_name: form.name,
           to_name: 'Andualem',
@@ -67,17 +79,17 @@ const Contact = () => {
           to_email: 'andy2023user@gmail.com',
           message: form.message,
         },
-        'TDcHEervFaq02RtIL'
+        publicKey
       )
       .then(() => {
         setLoading(false);
-        alert('Thank you. I will get back to you as soon as possible.');
+        toast.success('Thank you. I will get back to you as soon as possible.');
         setForm({ name: '', email: '', message: '' });
       })
       .catch((error) => {
         setLoading(false);
         console.log(error);
-        alert('Feature not available. Please try again later.');
+        toast.error('Feature not available. Please try again later.');
       });
   };
 
