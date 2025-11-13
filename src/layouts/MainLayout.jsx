@@ -3,6 +3,7 @@ import Footer from '../components/Footer';
 import { Outlet } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
 
+import FloatingContactButton from '../components/FloatingContactButton';
 const MainLayout = () => {
   return (
     <div className="flex flex-col min-h-screen bg-gray-100">
@@ -13,7 +14,7 @@ const MainLayout = () => {
       <div className="flex-grow">
         <Outlet />
       </div>
-
+      <FloatingContactButton />{/* Floating Contact Button */}
       <Footer />
       <Toaster
         position="top-center"

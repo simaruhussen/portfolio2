@@ -26,23 +26,26 @@ const Hero = () => {
       } else {
         clearInterval(typingInterval);
         setTimeout(() => {
-          // Clear and go to next text after short pause
           setDisplayedText('');
           setCharIndex(0);
           setCurrentTextIndex((prev) => (prev + 1) % rotatingTexts.length);
-        }, 2000); // pause after full text is displayed
+        }, 2000);
       }
-    }, 100); // typing speed (ms per character)
+    }, 100);
 
     return () => clearInterval(typingInterval);
   }, [charIndex, currentTextIndex]);
 
   return (
-    <section className="relative w-full h-auto min-h-screen bg-gray-100 flex items-center justify-center" id="hero">
-      <div className={` max-w-7xl mx-auto pt-28 flex flex-col md:flex-row items-center justify-between gap-10`}>
+    <section
+      id="hero"
+      className="relative w-full h-auto min-h-screen bg-gray-100 flex items-center justify-center pt-28"
+    >
+      <div className="max-w-7xl mx-auto pt-28 flex flex-col md:flex-row items-center justify-between gap-10">
         
         {/* Text Section */}
         <div className="flex-1 flex flex-col items-center md:items-start text-center md:text-left">
+          
           <motion.div
             initial={{ opacity: 0, y: -30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -51,6 +54,7 @@ const Hero = () => {
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
               Hi, I'm Andualem Assefa
             </h2>
+
             <div className="flex items-center justify-center md:justify-start gap-4 mb-4">
               <div className="h-[2px] w-16 sm:w-20 bg-gray-400 rounded-full"></div>
               <FaStar className="text-yellow-500 text-lg sm:text-xl" />
@@ -90,6 +94,7 @@ const Hero = () => {
               Download Resume <HiDownload size={20} />
             </a>
           </motion.div>
+
         </div>
 
         {/* Image Section */}
@@ -99,12 +104,15 @@ const Hero = () => {
           transition={{ delay: 0.5, duration: 0.8 }}
           className="flex-1 flex justify-center items-center"
         >
-          <img
-            src={profile}
-            alt="Andualem Assefa"
-            className="w-52 h-52 sm:w-56 sm:h-56 md:w-[300px] md:h-[300px] object-cover rounded-full shadow-xl border-4 border-sky-900 "
-          />
+          <div className="w-52 h-52 sm:w-56 sm:h-56 md:w-[300px] md:h-[300px] bg-slate-300 rounded-full flex items-center justify-center shadow-xl border-4 border-sky-900">
+            <img
+              src={profile}
+              alt="Andualem Assefa"
+              className="w-48 h-48 sm:w-52 sm:h-52 md:w-[280px] md:h-[280px] object-contain rounded-full"
+            />
+          </div>
         </motion.div>
+
       </div>
     </section>
   );
