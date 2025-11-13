@@ -264,7 +264,7 @@ export const tools = [
         },
       ],
       //sample image
-      image: "images/ERP.png",
+      image: "images/ERP1.png",
       // source_code_link: "",
     },
     {
@@ -320,11 +320,11 @@ export const tools = [
     university: "Debre Markos University",
     field: "BSc in Software Engineering",
   },
-  {
-    year: "2021 – 2022",
-    university: "EthixDev Technology",
-    field: "Full stack development ",
-  },
+  // {
+  //   year: "2021 – 2022",
+  //   university: "EthixDev Technology",
+  //   field: "Full stack development ",
+  // },
   // Add more if needed
 ];
   

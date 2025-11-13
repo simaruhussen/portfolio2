@@ -31,8 +31,7 @@ const About = () => {
             variants={fadeIn("", "", 0.2, 1)}
             className="text-gray-900 text-[17px] leading-[30px] max-w-[500px] flex-1 font-sans"
           >
-             I'm a passionate Full Stack Develope with 3+ years of experience building scalable, high-performance web applications using .NET Core, Django, React, Angular, and cloud platforms. Passionate about clean code, solving complex problems, and delivering user-friendly digital solutions that make an impact.
-  
+             Passionate Full Stack Developer with 3+ years of experience building scalable, high-performance web applications using .NET Core, Django, React, Angular, and cloud platforms. I thrive on writing clean code, solving complex problems, and delivering user-friendly digital solutions that create real impact.
 
           </motion.p>
 

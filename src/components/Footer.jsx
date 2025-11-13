@@ -19,9 +19,8 @@ const Footer = () => {
             Andualem Assefa
           </h2>
           <p className="text-sm text-gray-600 tracking-wide">
-  Software Developer | Designing efficient, scalable, and user-friendly solutions 💻
-</p>
-
+            Software Developer | Designing efficient, scalable, and user-friendly solutions 💻
+          </p>
         </div>
 
         {/* Social Links */}
@@ -31,25 +30,30 @@ const Footer = () => {
               icon: <FaGithub size={26} />,
               link: "https://github.com/Andu2023",
               label: "GitHub",
+              hideOnLarge: false,
             },
             {
               icon: <FaLinkedin size={26} />,
               link: "https://www.linkedin.com/in/andualem-assefa/",
               label: "LinkedIn",
+              hideOnLarge: false,
             },
             {
               icon: <FaEnvelope size={26} />,
               link: "mailto:andy2023user@gmail.com",
               label: "Email",
+              hideOnLarge: true, // hide on large screens
             },
           ].map((item, i) => (
             <motion.a
               key={i}
               href={item.link}
-              target="_blank"
-              rel="noopener noreferrer"
+              target={item.label === "Email" ? "_self" : "_blank"}
+              rel={item.label === "Email" ? undefined : "noopener noreferrer"}
               whileHover={{ scale: 1.2, y: -2 }}
-              className="text-gray-500 hover:text-sky-600 transition-colors duration-300"
+              className={`text-gray-500 hover:text-sky-600 transition-colors duration-300 ${
+                item.hideOnLarge ? "block sm:hidden" : ""
+              }`}
               aria-label={item.label}
             >
               {item.icon}

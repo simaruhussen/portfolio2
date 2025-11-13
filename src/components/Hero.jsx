@@ -44,7 +44,7 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto pt-28 flex flex-col md:flex-row items-center justify-between gap-10">
         
         {/* Text Section */}
-        <div className="flex-1 flex flex-col items-center md:items-start text-center md:text-left">
+        <div className="flex-1 flex flex-col items-start text-left">
           
           <motion.div
             initial={{ opacity: 0, y: -30 }}

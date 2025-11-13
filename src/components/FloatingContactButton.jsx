@@ -1,5 +1,5 @@
 // src/components/FloatingContactButton.jsx
-import { FaPhoneAlt, FaTelegramPlane, FaWhatsapp } from "react-icons/fa";
+import { FaTelegramPlane, FaWhatsapp } from "react-icons/fa";
 
 const FloatingContactButton = () => {
   return (

@@ -5,7 +5,7 @@ import { toast } from 'react-hot-toast';
 import { SectionWrapper } from '../hoc';
 import { FaLinkedinIn, FaPhone, FaStar } from 'react-icons/fa';
 import { slideIn } from '../utils/motion';
-import {  FaGithub, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaGithub, FaMapMarkerAlt } from 'react-icons/fa';
 import { FiMail } from 'react-icons/fi';
 import { FiSend } from 'react-icons/fi';
 
@@ -94,28 +94,22 @@ const Contact = () => {
   };
 
   return (
-    <div className="xl:mt-6 max-w-7xl mx-auto px-4 md:px-20 ">
-       <motion.div
-               
-                className="text-center flex flex-col items-center justify-center"
-              >
-                <h2 className="text-4xl font-bold text-sky-950">CONTACT ME.</h2>
-      
-                {/* Decorative line with star */}
-                <div className="flex items-center gap-4 mt-4">
-                  <div className="h-[2px] w-20 bg-gray-400 rounded-full"></div>
-                  <FaStar className="text-yellow-500 text-xl" />
-                  <div className="h-[2px] w-20 bg-gray-400 rounded-full"></div>
-                </div>
-              </motion.div>
+    <div className="xl:mt-6 max-w-7xl mx-auto px-4 md:px-20">
+      <motion.div className="text-center flex flex-col items-center justify-center">
+        <h2 className="text-4xl font-bold text-sky-950">CONTACT ME.</h2>
+
+        {/* Decorative line with star */}
+        <div className="flex items-center gap-4 mt-4">
+          <div className="h-[2px] w-20 bg-gray-400 rounded-full"></div>
+          <FaStar className="text-yellow-500 text-xl" />
+          <div className="h-[2px] w-20 bg-gray-400 rounded-full"></div>
+        </div>
+      </motion.div>
 
       <div className="mt-10 flex flex-col lg:flex-row gap-10">
         {/* Contact Form */}
-        <div
-          
-          className="bg-white shadow-lg rounded-2xl p-8 flex-1 text-black"
-        >
-        <h4 className="text-xl font-semibold text-gray-800 text-center mb-4"> Send  &nbsp;&nbsp; Message</h4>
+        <div className="bg-white shadow-lg rounded-2xl p-8 flex-1 text-black">
+          <h4 className="text-xl font-semibold text-gray-800 text-center mb-4">Send  &nbsp;&nbsp; Message</h4>
 
           <form ref={formRef} onSubmit={handleSubmit} className="flex flex-col gap-6">
             <label className="flex flex-col">
@@ -145,7 +139,7 @@ const Contact = () => {
             </label>
 
             <label className="flex flex-col">
-              <span className="text-gray-700z font-medium mb-2">Your Message</span>
+              <span className="text-gray-700 font-medium mb-2">Your Message</span>
               <textarea
                 rows="5"
                 name="message"
@@ -161,44 +155,62 @@ const Contact = () => {
               type="submit"
               className="bg-sky-900 text-white font-semibold py-3 px-6 rounded-lg hover:bg-sky-700 transition duration-300 flex items-center gap-2 justify-center"
             >
-              {loading ? 'Sending...' : 'Send  Message '}
-                <>
+              {loading ? 'Sending...' : 'Send  Message'}
               <FiSend size={18} />
-              </>
             </button>
           </form>
         </div>
 
         {/* Info Card */}
-        <div
-  
-          className="bg-white shadow-lg rounded-2xl p-8 flex-1 flex flex-col gap-5"
-        >
+        <div className="bg-white shadow-lg hover:shadow-2xl rounded-2xl p-8 flex-1 flex flex-col gap-5 transition-shadow duration-300">
           <h4 className="text-xl font-semibold text-gray-800">Get in Touch</h4>
+
           <div className="flex items-center gap-3 text-gray-700">
             <FaLinkedinIn className="text-blue-500 text-xl" />
-            <a href="https://www.linkedin.com/in/andualem-assefa/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.linkedin.com/in/andualem-assefa/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-sky-600 transition-colors duration-300"
+            >
               andualem-assefa
             </a>
           </div>
+
           <div className="flex items-center gap-3 text-gray-700">
             <FiMail className="text-red-500 text-xl" />
-            <a href="mailto:andy2023user@gmail.com">andy2023user@gmail.com</a>
+            <a
+              href="mailto:andy2023user@gmail.com"
+              className="hover:text-red-600 transition-colors duration-300"
+            >
+              andy2023user@gmail.com
+            </a>
           </div>
+
           <div className="flex items-center gap-3 text-gray-700">
             <FaMapMarkerAlt className="text-green-600 text-xl" />
             <span>Addis Ababa, Ethiopia</span>
           </div>
+
           <div className="flex items-center gap-3 text-gray-700">
             <FaGithub className="text-black text-xl" />
-            <a href="https://github.com/Andu2023" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://github.com/Andu2023"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-gray-800 transition-colors duration-300"
+            >
               @Andu
             </a>
           </div>
+
           <div className="flex items-center gap-3 text-gray-700">
             <FaPhone className="text-black text-xl" />
-            <a href="" target="_blank" rel="noopener noreferrer">
-             +251938698149
+            <a
+              href="tel:+251938698149"
+              className="hover:text-green-600 transition-colors duration-300"
+            >
+              +251938698149
             </a>
           </div>
         </div>
