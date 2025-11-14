@@ -119,7 +119,7 @@ const Contact = () => {
                 name="name"
                 value={form.name}
                 onChange={handleChange}
-                placeholder="What's your name?"
+                placeholder="Enter your full name"
                 className="bg-gray-100 py-3 px-4 rounded-lg border border-gray-300 outline-none"
               />
               {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name}</p>}
@@ -132,7 +132,7 @@ const Contact = () => {
                 name="email"
                 value={form.email}
                 onChange={handleChange}
-                placeholder="What's your email?"
+                placeholder="Enter your email address"
                 className="bg-gray-100 py-3 px-4 rounded-lg border border-gray-300 outline-none"
               />
               {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
@@ -145,7 +145,7 @@ const Contact = () => {
                 name="message"
                 value={form.message}
                 onChange={handleChange}
-                placeholder="What do you want to say?"
+                placeholder="Write your message here..."
                 className="bg-gray-100 py-3 px-4 rounded-lg border border-gray-300 outline-none"
               />
               {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message}</p>}
@@ -153,7 +153,7 @@ const Contact = () => {
 
             <button
               type="submit"
-              className="bg-sky-900 text-white font-semibold py-3 px-6 rounded-lg hover:bg-sky-700 transition duration-300 flex items-center gap-2 justify-center"
+              className="bg-sky-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-sky-700 transition duration-300 flex items-center gap-2 justify-center"
             >
               {loading ? 'Sending...' : 'Send  Message'}
               <FiSend size={18} />

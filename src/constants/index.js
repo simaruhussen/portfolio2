@@ -71,6 +71,15 @@
     }
   ];
   export const frameworks = [
+
+  {
+    name: "Django",
+    icon: "https://cdn.worldvectorlogo.com/logos/django-community.svg",
+  },
+  {
+    name: ".NET Core",
+    icon: "https://cdn.worldvectorlogo.com/logos/dotnet.svg",
+  },
   {
     name: "Angular",
     icon: "https://letsprogram.in/assets/images/icons/angular.png",
@@ -79,19 +88,13 @@
     name: "React JS",
     icon: "https://letsprogram.in/assets/images/icons/react.png",
   },
-  {
-    name: ".NET Core",
-    icon: "https://cdn.worldvectorlogo.com/logos/dotnet.svg",
-  },
+  
   {
     name: "Tailwind CSS",
     icon: "https://letsprogram.in/assets/images/icons/tailwind.png",
   },
   
-  {
-    name: "Django",
-    icon: "https://cdn.worldvectorlogo.com/logos/django-community.svg",
-  }
+  
 ];
 
 
