@@ -39,8 +39,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="relative w-full h-auto min-h-screen bg-gray-100 flex items-center justify-center pt-28"
-    >
+      className="relative w-full h-auto min-h-screen bg-gray-100 flex items-center justify-center pt-28 px-8 sm:px-12 md:px-10">
       <div className="max-w-7xl mx-auto pt-28 flex flex-col md:flex-row items-center justify-between gap-10">
         
         {/* Text Section */}
