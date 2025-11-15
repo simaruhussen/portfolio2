@@ -47,7 +47,11 @@ const Experience = () => {
     <div className="w-full flex flex-col items-center mt-6 px-4 md:px-20">
       
        <div className="w-full max-w-6xl flex justify-between items-center mb-6 px-4 max-sm:gap-5 ">
-        <h2 className="text-xl font-bold text-gray-800 font-sans">Resume</h2>
+         <h2 className="text-3xl font-extrabold text-gray-900 tracking-wide 
+                 font-sans bg-gradient-to-r from-sky-600 to-emerald-500 
+                 bg-clip-text text-transparent">
+    Resume
+  </h2>
        
 
 <motion.div

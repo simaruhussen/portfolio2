@@ -96,7 +96,7 @@ const Contact = () => {
   return (
     <div className="xl:mt-6 max-w-7xl mx-auto px-4 md:px-20">
       <motion.div className="text-center flex flex-col items-center justify-center">
-        <h2 className="text-4xl font-bold text-sky-950">CONTACT ME.</h2>
+    <h2 className="text-4xl font-bold text-sky-950">Contact Me</h2>
 
         {/* Decorative line with star */}
         <div className="flex items-center gap-4 mt-4">
@@ -163,7 +163,7 @@ const Contact = () => {
 
         {/* Info Card */}
         <div className="bg-white shadow-lg hover:shadow-2xl rounded-2xl p-8 flex-1 flex flex-col gap-5 transition-shadow duration-300">
-          <h4 className="text-xl font-semibold text-gray-800">Get in Touch</h4>
+          <h4 className="text-xl font-semibold text-gray-800">Get In Touch</h4>
 
           <div className="flex items-center gap-3 text-gray-700">
             <FaLinkedinIn className="text-blue-500 text-xl" />

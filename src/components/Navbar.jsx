@@ -98,26 +98,44 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Mobile Dropdown */}
-        {toggle && (
-          <div className="absolute top-[70px] right-6 bg-white/90 backdrop-blur-md rounded-xl shadow-lg p-6 flex flex-col gap-4 border border-gray-200 sm:hidden">
-            {navLinks.map((link) => (
-              <a
-                key={link.id}
-                href={`#${link.id}`}
-                className={`text-[16px] font-medium ${
-                  active === link.title ? "text-emerald-600" : "text-gray-800"
-                } hover:text-emerald-700`}
-                onClick={() => {
-                  setToggle(false);
-                  setActive(link.title);
-                }}
-              >
-                {link.title}
-              </a>
-            ))}
-          </div>
-        )}
+      {/* Mobile Dropdown */}
+{toggle && (
+  <div
+    className="
+      absolute top-full left-0 
+      w-full
+      bg-white 
+      border-t border-gray-200 
+      shadow-md
+      sm:hidden
+      flex flex-col
+    "
+  >
+    {navLinks.map((link) => (
+      <a
+        key={link.id}
+        href={`#${link.id}`}
+        className={`
+          w-full px-6 py-4 text-[16px] 
+          border-b border-gray-100 
+          transition-all
+          ${
+            active === link.title
+              ? "bg-gray-50 text-emerald-600 font-semibold"
+              : "text-gray-800 hover:bg-gray-50"
+          }
+        `}
+        onClick={() => {
+          setToggle(false);
+          setActive(link.title);
+        }}
+      >
+        {link.title}
+      </a>
+    ))}
+  </div>
+)}
+
 
       </div>
     </nav>

@@ -21,7 +21,7 @@ const FloatingContactButton = () => {
       </div>
 
       {/* Telegram */}
-      <div className="relative group flex items-center justify-end">
+      {/* <div className="relative group flex items-center justify-end">
         <span className="absolute right-16 bg-gray-800 text-white text-sm px-3 py-1 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
           Telegram
         </span>
@@ -33,7 +33,7 @@ const FloatingContactButton = () => {
         >
           <FaTelegramPlane size={23} />
         </a>
-      </div>
+      </div> */}
     </div>
   );
 };
