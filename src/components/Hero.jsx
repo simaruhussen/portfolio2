@@ -7,10 +7,10 @@ import { useState, useEffect } from 'react';
 
 const Hero = () => {
   const rotatingTexts = [
-    ' Full Stack  Developer',
-    'React & Angular for Dynamic Frontends',
-    'Robust APIs with .NET Core & Django',
-  ];
+  'Full Stack Developer',
+  'Building Dynamic Frontends with React & Angular',
+  'Creating Scalable APIs with .NET Core & Django',
+];
 
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const [displayedText, setDisplayedText] = useState('');
