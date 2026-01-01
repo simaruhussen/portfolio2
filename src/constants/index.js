@@ -319,7 +319,7 @@ export const tools = [
   ];
   export const education = [
   {
-    year: "2018 – 2023",
+    year: "2019 – 2024",
     university: "Debre Markos University",
     field: "BSc in Software Engineering",
   },
