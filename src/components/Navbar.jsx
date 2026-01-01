@@ -51,7 +51,7 @@ const Navbar = () => {
         >
           <p className="relative font-extrabold text-[24px] sm:text-[32px] uppercase tracking-[0.15em] text-slate-900 select-none">
             <span className="bg-gradient-to-r from-sky-600 via-emerald-500 to-sky-700 bg-clip-text text-transparent hover:brightness-110 transition-all duration-300">
-              Andualem
+              Simaru
             </span>
             <span className="ml-1 text-sky-600 text-sm animate-ping">&#8250;</span>
 

@@ -7,10 +7,12 @@ import { useState, useEffect } from 'react';
 
 const Hero = () => {
   const rotatingTexts = [
-  'Full Stack Developer',
-  'Building Dynamic Frontends with React & Angular',
-  'Creating Scalable APIs with .NET Core & Django',
-];
+    'Full Stack Developer',
+    'React & Next.js Specialist',
+    'Django & Node.js Backend Developer',
+    'UI with Tailwind CSS & Accessible Design',
+    'Docker · PostgreSQL · CI/CD'
+  ];
 
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const [displayedText, setDisplayedText] = useState('');
@@ -29,35 +31,34 @@ const Hero = () => {
           setDisplayedText('');
           setCharIndex(0);
           setCurrentTextIndex((prev) => (prev + 1) % rotatingTexts.length);
-        }, 2000);
+        }, 1800);
       }
-    }, 100);
+    }, 80);
 
     return () => clearInterval(typingInterval);
-  }, [charIndex, currentTextIndex]);
+  }, [charIndex, currentTextIndex, rotatingTexts]);
 
   return (
     <section
       id="hero"
-      className="relative w-full h-auto min-h-screen bg-gray-100 flex items-center justify-center pt-28 px-8 sm:px-12 md:px-10">
+      className="relative w-full h-auto min-h-screen bg-gray-100 flex items-center justify-center pt-28 px-8 sm:px-12 md:px-10"
+    >
       <div className="max-w-7xl mx-auto pt-28 flex flex-col md:flex-row items-center justify-between gap-10">
-        
         {/* Text Section */}
         <div className="flex-1 flex flex-col items-start text-left">
-          
           <motion.div
             initial={{ opacity: 0, y: -30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
-              Hi, I'm Andualem Assefa
+              Hi, I'm Simaru Hussen
             </h2>
 
             <div className="flex items-center justify-center md:justify-start gap-4 mb-4">
-              <div className="h-[2px] w-16 sm:w-20 bg-gray-400 rounded-full"></div>
+              <div className="h-[2px] w-16 sm:w-20 bg-gray-400 rounded-full" />
               <FaStar className="text-yellow-500 text-lg sm:text-xl" />
-              <div className="h-[2px] w-16 sm:w-20 bg-gray-400 rounded-full"></div>
+              <div className="h-[2px] w-16 sm:w-20 bg-gray-400 rounded-full" />
             </div>
           </motion.div>
 
@@ -69,13 +70,15 @@ const Hero = () => {
           >
             <p className="tracking-wide text-emerald-700 font-semibold text-lg sm:text-xl min-h-[32px]">
               {displayedText}
-              <span className="animate-pulse inline-block w-1 h-5 bg-emerald-700 ml-1" />
+              <span className="inline-block w-1 h-5 ml-1 bg-emerald-700 animate-pulse" />
+            </p>
+
+            <p className="tracking-wide">
+              I build maintainable, production-ready web applications with a focus on performance,
+              security and user experience.
             </p>
             <p className="tracking-wide">
-              Full Stack Software Developer building efficient and user-friendly
-            </p>
-            <p className="tracking-wide">
-              applications using a range of modern technologies.
+              Currently available for freelance and full-time opportunities.
             </p>
           </motion.div>
 
@@ -86,14 +89,13 @@ const Hero = () => {
             className="mt-6 w-full sm:w-auto flex justify-center sm:justify-start"
           >
             <a
-              href="/AndualemAssefaResume.pdf"
-              download="Andualem_Assefa_Resume.pdf"
+              href="/Simaru_Hussen_Resume.pdf"
+              download="Simaru_Hussen_Resume.pdf"
               className="flex items-center gap-2 rounded-full text-sky-900 bg-white hover:bg-gray-100 px-6 py-3 font-semibold transition-all duration-300 ease-in-out hover:scale-105 shadow-md border border-sky-900"
             >
               Download Resume <HiDownload size={20} />
             </a>
           </motion.div>
-
         </div>
 
         {/* Image Section */}
@@ -106,12 +108,11 @@ const Hero = () => {
           <div className="w-52 h-52 sm:w-56 sm:h-56 md:w-[300px] md:h-[300px] bg-slate-300 rounded-full flex items-center justify-center shadow-xl border-4 border-sky-900">
             <img
               src={profile}
-              alt="Andualem Assefa"
-              className="w-48 h-48 sm:w-52 sm:h-52 md:w-[280px] md:h-[280px] object-contain rounded-full"
+              alt="Simaru Hussen"
+              className="w-48 h-48 sm:w-52 sm:h-52 md:w-[280px] md:h-[280px] object-cover rounded-full"
             />
           </div>
         </motion.div>
-
       </div>
     </section>
   );

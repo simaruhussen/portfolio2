@@ -11,7 +11,7 @@ const FloatingContactButton = () => {
           WhatsApp
         </span>
         <a
-          href="https://wa.me/251938698149" 
+          href="https://wa.me/251973875927" 
           target="_blank"
           rel="noopener noreferrer"
           className="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-transform transform hover:scale-110"
@@ -26,7 +26,7 @@ const FloatingContactButton = () => {
           Telegram
         </span>
         <a
-          href="https://t.me/andualem28" 
+          href="https://t.me/sim3434" 
           target="_blank"
           rel="noopener noreferrer"
           className="bg-sky-500 hover:bg-sky-600 text-white p-4 rounded-full shadow-lg transition-transform transform hover:scale-110"
