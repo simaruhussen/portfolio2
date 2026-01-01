@@ -3,11 +3,9 @@ import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 import { toast } from 'react-hot-toast';
 import { SectionWrapper } from '../hoc';
-import { FaLinkedinIn, FaPhone, FaStar } from 'react-icons/fa';
+import { FaLinkedinIn, FaPhone, FaStar, FaGithub, FaMapMarkerAlt } from 'react-icons/fa';
+import { FiMail, FiSend } from 'react-icons/fi';
 import { slideIn } from '../utils/motion';
-import { FaGithub, FaMapMarkerAlt } from 'react-icons/fa';
-import { FiMail } from 'react-icons/fi';
-import { FiSend } from 'react-icons/fi';
 
 const Contact = () => {
   const formRef = useRef();
@@ -74,9 +72,9 @@ const Contact = () => {
         templateId,
         {
           from_name: form.name,
-          to_name: 'Andualem',
+          to_name: 'Simaru Hussen',
           from_email: form.email,
-          to_email: 'andy2023user@gmail.com',
+          to_email: 'simaruhussen@gmail.com',
           message: form.message,
         },
         publicKey
@@ -96,7 +94,7 @@ const Contact = () => {
   return (
     <div className="xl:mt-6 max-w-7xl mx-auto px-4 md:px-20">
       <motion.div className="text-center flex flex-col items-center justify-center">
-    <h2 className="text-4xl font-bold text-sky-950">Contact Me</h2>
+        <h2 className="text-4xl font-bold text-sky-950">Contact Me</h2>
 
         {/* Decorative line with star */}
         <div className="flex items-center gap-4 mt-4">
@@ -108,8 +106,12 @@ const Contact = () => {
 
       <div className="mt-10 flex flex-col lg:flex-row gap-10">
         {/* Contact Form */}
-        <div className="bg-white shadow-lg rounded-2xl p-8 flex-1 text-black">
-          <h4 className="text-xl font-semibold text-gray-800 text-center mb-4">Send  &nbsp;&nbsp; Message</h4>
+        <div
+          className="bg-white shadow-lg rounded-2xl p-8 flex-1 text-black"
+          as={motion.div}
+          variants={slideIn('left', 'spring', 0.2, 0.75)}
+        >
+          <h4 className="text-xl font-semibold text-gray-800 text-center mb-4">Send Message</h4>
 
           <form ref={formRef} onSubmit={handleSubmit} className="flex flex-col gap-6">
             <label className="flex flex-col">
@@ -155,7 +157,7 @@ const Contact = () => {
               type="submit"
               className="bg-sky-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-sky-700 transition duration-300 flex items-center gap-2 justify-center"
             >
-              {loading ? 'Sending...' : 'Send  Message'}
+              {loading ? 'Sending...' : 'Send Message'}
               <FiSend size={18} />
             </button>
           </form>
@@ -165,53 +167,85 @@ const Contact = () => {
         <div className="bg-white shadow-lg hover:shadow-2xl rounded-2xl p-8 flex-1 flex flex-col gap-5 transition-shadow duration-300">
           <h4 className="text-xl font-semibold text-gray-800">Get In Touch</h4>
 
+          {/* LinkedIn (displaying username from CV) */}
           <div className="flex items-center gap-3 text-gray-700">
             <FaLinkedinIn className="text-blue-500 text-xl" />
-            <a
-              href="https://www.linkedin.com/in/andualem-assefa/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-sky-600 transition-colors duration-300"
-            >
-              andualem-assefa
-            </a>
+            <span className="hover:text-sky-600 transition-colors duration-300">simaru -hussen</span>
           </div>
 
+          {/* Email */}
           <div className="flex items-center gap-3 text-gray-700">
             <FiMail className="text-red-500 text-xl" />
             <a
-              href="mailto:andy2023user@gmail.com"
+              href="mailto:simaruhussen@gmail.com"
               className="hover:text-red-600 transition-colors duration-300"
             >
-              andy2023user@gmail.com
+              simaruhussen@gmail.com
             </a>
           </div>
 
+          {/* Location */}
           <div className="flex items-center gap-3 text-gray-700">
             <FaMapMarkerAlt className="text-green-600 text-xl" />
             <span>Addis Ababa, Ethiopia</span>
           </div>
 
+          {/* GitHub (username found in CV) */}
           <div className="flex items-center gap-3 text-gray-700">
             <FaGithub className="text-black text-xl" />
             <a
-              href="https://github.com/Andu2023"
+              href="https://github.com/simaruhussen"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-gray-800 transition-colors duration-300"
             >
-              @Andu
+              @simaruhussen
             </a>
           </div>
 
+          {/* Phone */}
           <div className="flex items-center gap-3 text-gray-700">
             <FaPhone className="text-black text-xl" />
-            <a
-              href="tel:+251938698149"
-              className="hover:text-green-600 transition-colors duration-300"
-            >
-              +251938698149
+            <a href="tel:+251973875927" className="hover:text-green-600 transition-colors duration-300">
+              +251 97 387 5927
             </a>
+          </div>
+
+          {/* Projects / Portfolio */}
+          <div className="pt-3 border-t border-gray-100">
+            <h5 className="text-sm font-semibold text-gray-600">Selected Projects</h5>
+            <ul className="mt-2 flex flex-col gap-2 text-sm">
+              <li>
+                <a
+                  href="https://e-betachin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                >
+                  e-Betachin — e-betachin.com
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.sebattravel.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                >
+                  Sebat Travel — sebattravel.com
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://ethix.dev"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                >
+                  Ethix.dev — ethix.dev
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
