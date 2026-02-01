@@ -1,7 +1,7 @@
 import { styles } from '../styles';
 import { FaStar } from 'react-icons/fa';
 import { motion } from 'framer-motion';
-import profile from '../assets/profile.jpg';
+import profile from '../assets/profile.jfif';
 import { HiDownload } from 'react-icons/hi';
 import { useState, useEffect } from 'react';
 

@@ -4,6 +4,7 @@ import { textVariant, fadeIn } from '../utils/motion';
 
 // icon imports
 import { FaLayerGroup, FaCode, FaTools, FaReact, FaNodeJs, FaPython, FaAngular } from 'react-icons/fa';
+import { SiVisualstudiocode } from '@react-icons/all-files/si/SiVisualstudiocode';
 import {
   SiNextdotjs,
   SiDjango,
@@ -14,7 +15,6 @@ import {
   SiDocker,
   SiGit,
   SiGithubactions,
-  SiVisualstudiocode,
 } from 'react-icons/si';
 
 const sectionIcons = {
