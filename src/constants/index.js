@@ -24,23 +24,14 @@
   ];
   
   export const technologies = [
-    {
-      name: "Angular",
-      icon: "https://letsprogram.in/assets/images/icons/angular.png",
-    },
+    
     {
       name: "React JS",
       icon: "https://letsprogram.in/assets/images/icons/react.png",
     },
    
-    {
-      name: ".NET",
-      icon: "https://cdn.worldvectorlogo.com/logos/dotnet.svg",
-    },
-    {
-      name: "C#",
-      icon: "https://letsprogram.in/assets/images/icons/cc.png",
-    },
+    
+    
     {
       name: "Typescript",
       icon: "https://cdn.worldvectorlogo.com/logos/typescript.svg",
@@ -76,14 +67,8 @@
     name: "Django",
     icon: "https://cdn.worldvectorlogo.com/logos/django-community.svg",
   },
-  {
-    name: ".NET Core",
-    icon: "https://cdn.worldvectorlogo.com/logos/dotnet.svg",
-  },
-  {
-    name: "Angular",
-    icon: "https://letsprogram.in/assets/images/icons/angular.png",
-  },
+  
+  
   {
     name: "React JS",
     icon: "https://letsprogram.in/assets/images/icons/react.png",
@@ -99,10 +84,7 @@
 
 
 export const languages = [
-  {
-    name: "C#",
-    icon: "https://letsprogram.in/assets/images/icons/cc.png",
-  },
+  
    {
     name: "Python",
     icon: "https://cdn.worldvectorlogo.com/logos/python-5.svg",
@@ -146,10 +128,7 @@ export const tools = [
     name: "Web API",
     icon: "https://cdn.worldvectorlogo.com/logos/asp-net-core-1.svg",
   },
-  {
-    name: "Entity Framework",
-    icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Entity_Framework_Logo.svg/512px-Entity_Framework_Logo.svg.png",
-  },
+  
   {
     name: "SQL Server",
     icon: "https://cdn.worldvectorlogo.com/logos/microsoft-sql-server-1.svg",
