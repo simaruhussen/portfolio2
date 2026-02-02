@@ -3,7 +3,7 @@ import { SectionWrapper } from '../hoc';
 import { textVariant, fadeIn } from '../utils/motion';
 
 // icon imports
-import { FaLayerGroup, FaCode, FaTools, FaReact, FaNodeJs, FaPython, FaAngular } from 'react-icons/fa';
+import { FaLayerGroup, FaCode, FaTools, FaReact, FaNodeJs, FaPython } from 'react-icons/fa';
 import { SiVisualstudiocode } from '@react-icons/all-files/si/SiVisualstudiocode';
 import {
   SiNextdotjs,
@@ -27,16 +27,17 @@ const sectionIcons = {
 const frameworks = [
   { name: 'React', icon: <FaReact className="w-8 h-8" /> },
   { name: 'Next.js', icon: <SiNextdotjs className="w-8 h-8" /> },
-  { name: 'Django', icon: <SiDjango className="w-8 h-8" /> },
   { name: 'Node.js / Express', icon: <FaNodeJs className="w-8 h-8" /> },
-  { name: 'Angular', icon: <FaAngular className="w-8 h-8" /> },
+  { name: 'Django', icon: <SiDjango className="w-8 h-8" /> },
+  
+ 
 ];
 
 const languages = [
   { name: 'JavaScript', icon: <SiJavascript className="w-8 h-8" /> },
   { name: 'TypeScript', icon: <SiTypescript className="w-8 h-8" /> },
   { name: 'Python', icon: <FaPython className="w-8 h-8" /> },
-  { name: 'C# (.NET Core)', icon: <FaCode className="w-8 h-8" /> },
+  
   { name: 'SQL (Postgres)', icon: <SiPostgresql className="w-8 h-8" /> },
 ];
 

@@ -105,7 +105,7 @@ const Experience = () => {
         <h2
           className="text-3xl font-extrabold text-gray-900 tracking-wide 
                  font-sans bg-gradient-to-r from-sky-600 to-emerald-500 
-                 bg-clip-text text-transparent"
+                 bg-clip-text"
         >
           Resume
         </h2>
@@ -118,8 +118,9 @@ const Experience = () => {
         >
           {/* Update the href to point to your actual resume file in public/ */}
           <a
-            href="/Simaru_Hussen_Resume.pdf"
-            download="Simaru_Hussen_Resume.pdf"
+            href="/simaruhussen.pdf"
+            target="_blank" rel="noreferrer"
+            download="simaruhussen.pdf"
             className="flex items-center sm:max-w-fit px-4 sm:px-6 py-2 sm:py-3 gap-2 rounded-full text-sky-900 bg-white hover:bg-gray-100 font-semibold transition-all duration-300 ease-in-out hover:scale-105 shadow-md border border-sky-900 "
           >
             Download Resume <HiDownload size={20} />
