@@ -22,7 +22,7 @@ const projectsData = [
       { name: 'tailwind', color: 'text-sky-500' },
       { name: 'django-rest', color: 'text-green-600' },
     ],
-    image: '/projects/ebetachin.png',
+    image: '/public/e_homes.png',
   },
   {
     name: 'Sebat Travel',
@@ -33,19 +33,9 @@ const projectsData = [
       { name: 'django', color: 'text-green-600' },
       { name: 'i18n', color: 'text-purple-600' },
     ],
-    image: '/projects/sebattravel.png',
+    image: '/public/sebat_travel.png',
   },
-  {
-    name: 'Ethix.dev (Real Estate Showcase)',
-    description:
-      'Responsive real-estate showcase platform with dashboards for buyers, companies and admins; JWT-secured APIs, PostgreSQL backend, media handling and CI/CD deployments.',
-    tags: [
-      { name: 'nextjs', color: 'text-sky-500' },
-      { name: 'postgres', color: 'text-indigo-600' },
-      { name: 'ci/cd', color: 'text-emerald-600' },
-    ],
-    image: '/projects/ethixdev.png',
-  },
+  
   {
     name: 'Device Financing Platform',
     description:
@@ -55,19 +45,22 @@ const projectsData = [
       { name: 'nodejs', color: 'text-lime-600' },
       { name: 'security', color: 'text-red-500' },
     ],
-    image: '/projects/device-finance.png',
+    image: '/public/bejae.png',
   },
   {
-    name: 'Inventory Management System',
-    description:
-      'Inventory tracking system designed for the Ethiopian Federal Police: asset monitoring, reporting, secure role-based access and departmental controls.',
-    tags: [
-      { name: 'react', color: 'text-blue-600' },
-      { name: 'rest-api', color: 'text-green-600' },
-      { name: 'reporting', color: 'text-gray-700' },
-    ],
-    image: '/projects/inventory-system.png',
-  },
+  name: 'ReviewSummarizer.ai',
+  description:
+    'AI-powered review summarizer that ingests customer reviews for a product from multiple users and generates concise, actionable summaries using OpenAI. Summaries (with sentiment labels and key highlights) are persisted to a MySQL database via Prisma; frontend built with React and a Node.js API backend. Designed to save users time by surfacing the most important opinions and trends without reading every review. Includes authentication, search, pagination, and CI/CD-ready deployment configuration.',
+  tags: [
+    { name: 'react', color: 'text-sky-500' },
+    { name: 'prisma', color: 'text-emerald-600' },
+    { name: 'mysql', color: 'text-indigo-600' },
+    { name: 'openai', color: 'text-pink-500' },
+  ],
+  image: '/public/review_summarizer.png',
+}
+
+  
 ];
 
 const ProjectCard = ({ index, name, description, tags, image }) => {

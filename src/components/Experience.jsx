@@ -6,27 +6,7 @@ import { HiDownload } from "react-icons/hi";
 /* === Local experience & education data (from CV) === */
 const experiences = [
   {
-    title: "Full-Stack — Real Estate Showcase Platform",
-    company: "EthixDev",
-    date: "",
-    points: [
-      "Built a responsive React + Tailwind frontend with dashboards for Buyers, Companies and Admins featuring dynamic CRUD, advanced search & filters, image carousels and inquiry workflows.",
-      "Architected a Django REST Framework backend with JWT authentication and PostgreSQL; optimized schemas (UUID keys, indexed fields) and managed media uploads.",
-      "Implemented CI/CD and containerized deployments for reliable production rollout."
-    ],
-  },
-  {
-    title: "Full-Stack — Device Financing Platforms",
-    company: "Bejae Solutions",
-    date: "",
-    points: [
-      "Developed a Next.js + Tailwind frontend for service reps with real-time device catalog, advanced filtering and inventory/status updates.",
-      "Built a secure Node.js backend with JWT login, 2FA/email OTP, role-based access, IP whitelisting and session management.",
-      "Implemented end-to-end customer onboarding, KYC uploads, eligibility checks, loan application flows and repayment modules."
-    ],
-  },
-  {
-    title: "Frontend / Full-Stack — e-Betachin",
+    title: "Full-Stack — e-Betachin",
     company: "e-Betachin",
     date: "",
     points: [
@@ -44,14 +24,30 @@ const experiences = [
     ],
   },
   {
-    title: "Inventory Management System (project)",
-    company: "Ethiopian Federal Police (project)",
+    title: "Full-Stack — Device Financing Platforms",
+    company: "Bejae Solutions",
     date: "",
     points: [
-      "Designed an inventory tracking system to monitor and control assets across departments.",
-      "Focused on maintainability, reporting, and secure access controls."
+      "Developed a Next.js + Tailwind frontend for service reps with real-time device catalog, advanced filtering and inventory/status updates.",
+      "Built a secure Node.js backend with JWT login, 2FA/email OTP, role-based access, IP whitelisting and session management.",
+      "Implemented end-to-end customer onboarding, KYC uploads, eligibility checks, loan application flows and repayment modules."
     ],
   },
+  {
+  title: "Full-Stack — ReviewSummarizer.ai",
+  company: "EthixDev",
+  date: "",
+  points: [
+    "Developed a responsive React + Tailwind frontend with product pages and review management UIs that aggregate customer reviews, surface AI-generated summaries, sentiment badges and key highlights, and support search, filters and pagination to save users time.",
+    "Built a Node.js API with JWT authentication, Prisma ORM and MySQL; integrated OpenAI to generate concise summaries and extract sentiment, persisted summaries and metadata (with versioning) and provided admin controls for re-summarization and audit.",
+  ],
+}
+
+
+  
+  
+  
+ 
 ];
 
 const education = [
