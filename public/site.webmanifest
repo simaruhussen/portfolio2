@@ -1,21 +1,20 @@
 {
-  "name": "MyWebSite",
-  "short_name": "MySite",
+  "name": "Simaru Hussen | Full Stack Developer",
+  "short_name": "Simaru",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#6b21a8",
   "icons": [
     {
-      "src": "/web-app-manifest-192x192.png",
+      "src": "/pwa-192.png",
       "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "maskable"
+      "type": "image/png"
     },
     {
-      "src": "/web-app-manifest-512x512.png",
+      "src": "/pwa-512.png",
       "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "maskable"
+      "type": "image/png"
     }
-  ],
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
-  "display": "standalone"
+  ]
 }
